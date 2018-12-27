@@ -58,16 +58,13 @@ jobs:
     displayName: 'Build sdist'
     
 - job: 'Lightning Framework'
-
-pool:
-    vmImage: 'Ubuntu-16.04'
-
+  
   steps:
   - task: UsePythonVersion@0
     inputs:
       versionSpec: '3.x'
       architecture: 'x64'
       
-  - script:python Lightning_Test_Framwork.py
-    displayName: 'Lightning_Test_Framwork'
+- script: python Lightning_Test_Framwork.py
+  displayName: 'Lightning'
    
